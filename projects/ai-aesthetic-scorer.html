@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Aesthetic Scorer - Justin Lee</title>
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fixed Navigation Header -->
+    <header class="fixed-nav">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="../index.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Portfolio
+                </a>
+            </div>
+            
+            <div class="nav-center">
+                <h1 class="nav-name">AI Aesthetic Scorer</h1>
+            </div>
+            
+            <div class="nav-right">
+                <a href="../Justin_Lee_Resume_July_29.pdf" class="nav-link" download>
+                    <i class="fas fa-download"></i>
+                    Resume
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Background Grid -->
+    <div class="background-grid"></div>
+
+    <!-- Project Content -->
+    <main class="project-content">
+        <div class="container">
+            <!-- Project Header -->
+            <section class="project-header">
+                <div class="project-meta">
+                    <div class="project-tag">JUNE 2025 /</div>
+                    <h1 class="project-title">AI Aesthetic Scorer</h1>
+                    <p class="project-subtitle">Machine Learning Pipeline for Image Aesthetic Assessment</p>
+                </div>
+                
+                <div class="project-overview">
+                    <div class="overview-card">
+                        <h3>Project Overview</h3>
+                        <p>Advanced image analysis system that evaluates aesthetic appeal using machine learning algorithms. Transforms complex AI analysis into intuitive visual insights for content creators and designers.</p>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Vision Transformer</span>
+                            <span class="tech-tag">MLOps</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Details -->
+            <section class="project-details-section">
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <h3>Problem Statement</h3>
+                        <p>Content creators and designers needed an objective way to assess the aesthetic quality of images. Existing solutions were either too simplistic or required extensive manual analysis. The challenge was to create an automated system that could provide nuanced aesthetic evaluation while being accessible to non-technical users.</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3>Solution Approach</h3>
+                        <p>Developed a comprehensive ML pipeline using Vision Transformer (ViT) architecture to extract 10+ visual features including composition, color harmony, subject placement, and lighting quality. Implemented advanced bias correction algorithms to ensure consistent scoring across diverse lighting conditions.</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Multi-feature aesthetic analysis (composition, color, lighting, subject)</li>
+                            <li>Advanced bias correction for lighting variations</li>
+                            <li>Real-time scoring with visual feedback</li>
+                            <li>Batch processing for multiple images</li>
+                            <li>Detailed breakdown of aesthetic components</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3>Technical Implementation</h3>
+                        <ul>
+                            <li>Vision Transformer (ViT) for feature extraction</li>
+                            <li>Custom loss functions for aesthetic scoring</li>
+                            <li>Brightness bias correction algorithms</li>
+                            <li>Streamlit web interface for user interaction</li>
+                            <li>OpenCV for image preprocessing</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results & Metrics -->
+            <section class="results-section">
+                <h2>Results & Impact</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">95%</div>
+                        <div class="result-label">Accuracy Rate</div>
+                        <div class="result-description">Achieved 95% accuracy when tested against human aesthetic evaluations</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-number">40%</div>
+                        <div class="result-label">Bias Reduction</div>
+                        <div class="result-description">Reduced brightness bias influence by 40% through advanced correction algorithms</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-number">15-20%</div>
+                        <div class="result-label">Accuracy Improvement</div>
+                        <div class="result-description">Improved scoring accuracy by 15-20% for diverse lighting conditions</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Challenges & Solutions -->
+            <section class="challenges-section">
+                <h2>Challenges & Solutions</h2>
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <h3>Challenge: Lighting Bias</h3>
+                        <p>Initial models showed bias towards well-lit images, scoring them higher regardless of actual aesthetic quality.</p>
+                        <h4>Solution:</h4>
+                        <p>Implemented advanced bias correction algorithms that normalize lighting variations while preserving aesthetic quality indicators.</p>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <h3>Challenge: Feature Extraction</h3>
+                        <p>Traditional CNN approaches struggled to capture nuanced aesthetic elements like composition and color harmony.</p>
+                        <h4>Solution:</h4>
+                        <p>Adopted Vision Transformer architecture for better attention to global image features and implemented custom feature extraction for aesthetic-specific elements.</p>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <h3>Challenge: User Experience</h3>
+                        <p>Complex ML outputs needed to be presented in an intuitive way for non-technical users.</p>
+                        <h4>Solution:</h4>
+                        <p>Built a Streamlit web interface with visual feedback, detailed breakdowns, and batch processing capabilities.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Code Highlights -->
+            <section class="code-section">
+                <h2>Technical Highlights</h2>
+                <div class="code-highlights">
+                    <div class="highlight-card">
+                        <h3>Vision Transformer Implementation</h3>
+                        <p>Custom ViT architecture optimized for aesthetic feature extraction, with attention mechanisms focused on composition and color patterns.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <h3>Bias Correction Pipeline</h3>
+                        <p>Advanced algorithms that detect and correct lighting biases while maintaining aesthetic quality assessment accuracy.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <h3>MLOps Integration</h3>
+                        <p>Complete MLOps pipeline with automated training, validation, and deployment processes for consistent model performance.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Back to Portfolio -->
+            <section class="back-section">
+                <a href="../index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Portfolio
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
