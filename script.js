@@ -456,3 +456,27 @@ function handleSwipe() {
         }
     }
 }
+
+// Project page scroll indicator functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const projectScrollIndicator = document.getElementById('projectScrollIndicator');
+    
+    if (projectScrollIndicator) {
+        let hasScrolled = false;
+        
+        window.addEventListener('scroll', () => {
+            if (!hasScrolled && window.pageYOffset > 100) {
+                projectScrollIndicator.classList.add('hidden');
+                hasScrolled = true;
+            }
+        });
+        
+        // Also hide on any scroll movement
+        window.addEventListener('scroll', () => {
+            if (!hasScrolled) {
+                projectScrollIndicator.classList.add('hidden');
+                hasScrolled = true;
+            }
+        });
+    }
+});

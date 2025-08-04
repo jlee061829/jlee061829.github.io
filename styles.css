@@ -792,6 +792,50 @@ body {
     padding: 60px 0;
 }
 
+/* Project Page Scroll Indicator */
+.project-scroll-indicator {
+    position: relative;
+    margin: 40px 0;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-scroll-indicator.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.project-scroll-circle {
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgba(139, 115, 85, 0.3);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.project-scroll-circle:hover {
+    border-color: rgba(139, 115, 85, 0.6);
+}
+
+.project-scroll-text {
+    font-size: 10px;
+    color: #8B7355;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.project-scroll-arrow {
+    font-size: 12px;
+    color: #8B7355;
+    animation: bounce 2s infinite;
+}
+
 .project-header {
     margin-bottom: 80px;
 }
