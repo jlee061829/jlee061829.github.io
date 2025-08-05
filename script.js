@@ -1,12 +1,12 @@
 // Add resume download functionality
 document.addEventListener('DOMContentLoaded', () => {
-    const resumeLink = document.querySelector('a[href="Justin_Lee_Resume_July_29.pdf"]');
+    const resumeLink = document.querySelector('a[href="Justin_Lee_Resume.pdf"]');
     if (resumeLink) {
         resumeLink.addEventListener('click', (e) => {
             // Create a temporary link element to force download
             const link = document.createElement('a');
-            link.href = 'Justin_Lee_Resume_July_29.pdf';
-            link.download = 'Justin_Lee_Resume_July_29.pdf';
+            link.href = 'Justin_Lee_Resume.pdf';
+            link.download = 'Justin_Lee_Resume.pdf';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
