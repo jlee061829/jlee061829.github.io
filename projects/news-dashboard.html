@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multi-Source News Dashboard - Justin Lee</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Fixed Navigation Header -->
     <header class="fixed-nav">
-        <div class="nav-content">
-            <div class="nav-left">
-                <a href="../index.html" class="nav-link">
-                    <i class="fas fa-arrow-left"></i>
-                    Back to Portfolio
-                </a>
-            </div>
-            
-            <div class="nav-center">
-                <h1 class="nav-name">News Dashboard</h1>
-            </div>
-            
-            <div class="nav-right">
-                <a href="../Justin_Lee_Resume_July_29.pdf" class="nav-link" download>
-                    <i class="fas fa-download"></i>
-                    Resume
-                </a>
-            </div>
+      <div class="nav-content">
+        <div class="nav-left">
+          <a href="../index.html" class="nav-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Portfolio
+          </a>
         </div>
+
+        <div class="nav-center">
+          <h1 class="nav-name">News Dashboard</h1>
+        </div>
+
+        <div class="nav-right">
+          <a href="../Justin_Lee_Resume_July_29.pdf" class="nav-link" download>
+            <i class="fas fa-download"></i>
+            Resume
+          </a>
+        </div>
+      </div>
     </header>
 
     <!-- Background Grid -->
@@ -37,162 +40,228 @@
 
     <!-- Project Content -->
     <main class="project-content">
-        <div class="container">
-            <!-- Project Header -->
-            <section class="project-header">
-                <div class="project-meta">
-                    <div class="project-tag">APRIL 2025 /</div>
-                    <h1 class="project-title">Multi-Source News Dashboard</h1>
-                    <p class="project-subtitle">Comprehensive Web Scraping & Analytics Platform</p>
-                </div>
-                
-                <div class="project-overview">
-                    <div class="overview-card">
-                        <h3>Project Overview</h3>
-                        <p>Comprehensive web scraping and analytics platform for news content analysis. Collects and processes data from multiple news sources to provide insights into digital engagement patterns and content trends.</p>
-                    </div>
-                    
-                    <div class="tech-stack">
-                        <h3>Tech Stack</h3>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">BeautifulSoup</span>
-                            <span class="tech-tag">Playwright</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Data Processing</span>
-                            <span class="tech-tag">Analytics</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <div class="container">
+        <!-- Project Header -->
+        <section class="project-header">
+          <div class="project-meta">
+            <div class="project-tag">APRIL 2025 /</div>
+            <h1 class="project-title">Multi-Source News Dashboard</h1>
+            <p class="project-subtitle">
+              Comprehensive Web Scraping & Analytics Platform
+            </p>
+          </div>
 
-            <!-- Project Scroll Indicator -->
-            <div class="project-scroll-indicator" id="projectScrollIndicator">
-                <div class="project-scroll-circle">
-                    <span class="project-scroll-text">READ MORE</span>
-                    <i class="fas fa-chevron-down project-scroll-arrow"></i>
-                </div>
+          <div class="project-overview">
+            <div class="overview-card">
+              <h3>Project Overview</h3>
+              <p>
+                Real-time visualization dashboard for news content analysis from
+                four major news sources. Collects and processes data from ABC
+                News, CBS News, The Tab, and BuzzFeed to provide insights into
+                digital engagement patterns and content trends.
+              </p>
             </div>
 
-            <!-- Project Details -->
-            <section class="project-details-section">
-                <div class="details-grid">
-                    <div class="detail-card">
-                        <h3>Problem Statement</h3>
-                        <p>Research teams needed a comprehensive system to collect and analyze news content from multiple sources for digital engagement studies. Manual data collection was time-consuming and inconsistent, while existing tools couldn't handle the scale and diversity of news sources required.</p>
-                    </div>
-                    
-                    <div class="detail-card">
-                        <h3>Solution Approach</h3>
-                        <p>Engineered a comprehensive web scraping system using Python and Playwright to extract news articles from legacy and newer news sources. Built a data processing pipeline with BeautifulSoup and text cleaning algorithms, with all data automatically stored and processed on AWS infrastructure.</p>
-                    </div>
-                    
-                    <div class="detail-card">
-                        <h3>Key Features</h3>
-                        <ul>
-                            <li>Multi-source news scraping (CBS, ABC, BuzzFeed, etc.)</li>
-                            <li>Intelligent rate limiting and anti-detection measures</li>
-                            <li>Advanced text cleaning and data processing</li>
-                            <li>Automated AWS storage and processing</li>
-                            <li>Real-time analytics dashboard</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="detail-card">
-                        <h3>Technical Implementation</h3>
-                        <ul>
-                            <li>Playwright for dynamic content scraping</li>
-                            <li>BeautifulSoup for HTML parsing and data extraction</li>
-                            <li>Custom text cleaning algorithms</li>
-                            <li>AWS RDS for data storage</li>
-                            <li>Automated data processing pipeline</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+            <div class="tech-stack">
+              <h3>Tech Stack</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">BeautifulSoup</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">AWS Aurora</span>
+                <span class="tech-tag">SQLAlchemy</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <!-- Results & Metrics -->
-            <section class="results-section">
-                <h2>Results & Impact</h2>
-                <div class="results-grid">
-                    <div class="result-card">
-                        <div class="result-number">1,000+</div>
-                        <div class="result-label">Articles Scraped</div>
-                        <div class="result-description">Successfully collected over 1,000 articles from multiple news sources across different content categories</div>
-                    </div>
-                    
-                    <div class="result-card">
-                        <div class="result-number">15+</div>
-                        <div class="result-label">Data Points Per Article</div>
-                        <div class="result-description">Captured 15+ data points per article including metadata, content, and engagement metrics</div>
-                    </div>
-                    
-                    <div class="result-card">
-                        <div class="result-number">3</div>
-                        <div class="result-label">Major News Outlets</div>
-                        <div class="result-description">Gained interest and research support from 3 major local news outlets for collaboration</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Challenges & Solutions -->
-            <section class="challenges-section">
-                <h2>Challenges & Solutions</h2>
-                <div class="challenges-grid">
-                    <div class="challenge-card">
-                        <h3>Challenge: Anti-Scraping Measures</h3>
-                        <p>Many news websites implemented anti-scraping measures including rate limiting, CAPTCHAs, and dynamic content loading.</p>
-                        <h4>Solution:</h4>
-                        <p>Implemented intelligent rate limiting, user agent rotation, and Playwright for handling dynamic content. Added delays and randomization to avoid detection.</p>
-                    </div>
-                    
-                    <div class="challenge-card">
-                        <h3>Challenge: Data Quality</h3>
-                        <p>Raw scraped data contained ads, navigation elements, and inconsistent formatting that needed cleaning.</p>
-                        <h4>Solution:</h4>
-                        <p>Developed custom text cleaning algorithms using BeautifulSoup to filter out ads and extract only relevant content while preserving article structure.</p>
-                    </div>
-                    
-                    <div class="challenge-card">
-                        <h3>Challenge: Scale & Performance</h3>
-                        <p>Processing large volumes of data required efficient storage and processing infrastructure.</p>
-                        <h4>Solution:</h4>
-                        <p>Built automated AWS infrastructure with RDS for data storage and scalable processing pipelines for handling large datasets efficiently.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Code Highlights -->
-            <section class="code-section">
-                <h2>Technical Highlights</h2>
-                <div class="code-highlights">
-                    <div class="highlight-card">
-                        <h3>Multi-Source Scraping Engine</h3>
-                        <p>Custom scraping engine that handles different website structures and anti-detection measures while maintaining data quality and consistency.</p>
-                    </div>
-                    
-                    <div class="highlight-card">
-                        <h3>Data Processing Pipeline</h3>
-                        <p>Advanced text cleaning and data processing algorithms that extract meaningful insights while filtering out noise and irrelevant content.</p>
-                    </div>
-                    
-                    <div class="highlight-card">
-                        <h3>AWS Integration</h3>
-                        <p>Complete cloud infrastructure with automated data storage, processing, and analytics capabilities for scalable research operations.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Back to Portfolio -->
-            <section class="back-section">
-                <a href="../index.html" class="back-btn">
-                    <i class="fas fa-arrow-left"></i>
-                    Back to Portfolio
-                </a>
-            </section>
+        <!-- Project Scroll Indicator -->
+        <div class="project-scroll-indicator" id="projectScrollIndicator">
+          <div class="project-scroll-circle">
+            <span class="project-scroll-text">READ MORE</span>
+            <i class="fas fa-chevron-down project-scroll-arrow"></i>
+          </div>
         </div>
+
+        <!-- Project Details -->
+        <section class="project-details-section">
+          <div class="details-grid">
+            <div class="detail-card">
+              <h3>Problem Statement</h3>
+              <p>
+                Research teams needed a comprehensive system to collect and
+                analyze news content from multiple sources for digital
+                engagement studies. Manual data collection was time-consuming
+                and inconsistent, while existing tools couldn't handle the scale
+                and diversity of news sources required.
+              </p>
+            </div>
+
+            <div class="detail-card">
+              <h3>Solution Approach</h3>
+              <p>
+                Engineered a comprehensive web scraping system using Python and
+                BeautifulSoup to extract news articles from four major news
+                sources. Built a real-time visualization dashboard using
+                Streamlit and Plotly with automated data refresh and interactive
+                analytics, with all data stored in AWS Aurora PostgreSQL
+                database.
+              </p>
+            </div>
+
+            <div class="detail-card">
+              <h3>Key Features</h3>
+              <ul>
+                <li>
+                  Multi-source news scraping (CBS, ABC, BuzzFeed, The Tab)
+                </li>
+                <li>
+                  Real-time interactive dashboard with 6+ visualization charts
+                </li>
+                <li>Automated data refresh every 10 minutes</li>
+                <li>Automated AWS storage and processing</li>
+                <li>Interactive filtering by source, date, and keywords</li>
+              </ul>
+            </div>
+
+            <div class="detail-card">
+              <h3>Technical Implementation</h3>
+              <ul>
+                <li>BeautifulSoup for HTML parsing and data extraction</li>
+                <li>Streamlit for interactive web application</li>
+                <li>Plotly for advanced data visualizations</li>
+                <li>PostgreSQL on AWS Aurora RDS for data storage</li>
+                <li>Environment-based configuration for security</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Results & Metrics -->
+        <section class="results-section">
+          <h2>Results & Impact</h2>
+          <div class="results-grid">
+            <div class="result-card">
+              <div class="result-number">7,300+</div>
+              <div class="result-label">Articles Scraped</div>
+              <div class="result-description">
+                Successfully collected over 7,300+ articles from four major news
+                sources across multiple content categories
+              </div>
+            </div>
+
+            <div class="result-card">
+              <div class="result-number">15+</div>
+              <div class="result-label">Data Points Per Article</div>
+              <div class="result-description">
+                Captured 15+ data points per article including metadata,
+                content, and engagement metrics
+              </div>
+            </div>
+
+            <div class="result-card">
+              <div class="result-number">4</div>
+              <div class="result-label">Major News Sources</div>
+              <div class="result-description">
+                Comprehensive coverage of ABC News, CBS News, The Tab, and
+                BuzzFeed with real-time data updates
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Challenges & Solutions -->
+        <section class="challenges-section">
+          <h2>Challenges & Solutions</h2>
+          <div class="challenges-grid">
+            <div class="challenge-card">
+              <h3>Challenge: Data Integration</h3>
+              <p>
+                Multiple news sources had different data structures and formats
+                that needed standardization.
+              </p>
+              <h4>Solution:</h4>
+              <p>
+                Implemented comprehensive data cleaning and column mapping to
+                standardize data from all sources into a unified format for
+                consistent analysis.
+              </p>
+            </div>
+
+            <div class="challenge-card">
+              <h3>Challenge: Real-time Performance</h3>
+              <p>
+                Dashboard needed to handle large datasets while maintaining fast
+                loading times and interactive features.
+              </p>
+              <h4>Solution:</h4>
+              <p>
+                Built efficient database queries with Streamlit caching
+                (10-minute refresh), optimized data processing, and interactive
+                filtering for smooth user experience.
+              </p>
+            </div>
+
+            <div class="challenge-card">
+              <h3>Challenge: Deployment & Security</h3>
+              <p>
+                Secure deployment required proper credential management and
+                scalable architecture.
+              </p>
+              <h4>Solution:</h4>
+              <p>
+                Implemented environment-based configuration, clean separation of
+                concerns, and deployment-ready structure with proper error
+                handling and connection pooling.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Code Highlights -->
+        <section class="code-section">
+          <h2>Technical Highlights</h2>
+          <div class="code-highlights">
+            <div class="highlight-card">
+              <h3>Real-time Visualization Dashboard</h3>
+              <p>
+                Interactive Streamlit application with 6+ chart types, automated
+                data refresh, and comprehensive filtering capabilities for deep
+                data exploration.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <h3>Multi-Source Data Pipeline</h3>
+              <p>
+                Advanced data processing pipeline that handles four different
+                news sources with unified data structure and real-time updates
+                from AWS Aurora database.
+              </p>
+            </div>
+
+            <div class="highlight-card">
+              <h3>Deployment-Ready Architecture</h3>
+              <p>
+                Clean, modular codebase with environment-based configuration,
+                proper error handling, and scalable design for production
+                deployment across multiple platforms.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Back to Portfolio -->
+        <section class="back-section">
+          <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Back to Portfolio
+          </a>
+        </section>
+      </div>
     </main>
 
     <script src="../script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
